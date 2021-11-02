@@ -91,17 +91,6 @@ def vordsed_palgad(i,p):
             print(palk,'saab kätte',nimi)
 
 
-#def sarnased_palgad(i,p):
-#    N=len(p)
-#    for n in range(0,N):
-#        for m in range(n,N):
-#            if p[n]==p[m]:
-#                n=p.count(p[n])
-
-#    print(p[n], i[n])
-#    print()
-
-
 def otsi_nimi(i,p):
     otsi=input('Sisesta nimi, keda otsime: ')
     n=i.count(otsi)
