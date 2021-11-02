@@ -209,27 +209,17 @@ def sort_nimi_jargi(p,i,v):
     andmed_ekranile(i,p)
 
 
-def tulumaks(p,i):
-    pc=p.copy()
-    ic=i.copy()
+def tulumaks(i,p):
     summ=0
-    for p1 in pc:
-        ind=pc.index(p1)
-        if int(p1)<=1200:
+    for p1 in p:
+        ind=p.index(p1)
+        if p1<=1200:
             m=p1-500
             n=m*0.2
             summ=(m-n)+500
             print(i[ind],f'Maksab tulumakse {n} EUR ja saab palga {summ}EUR')
-        elif 1200<int(p1)<2100:
-            mi=(500-0.55556)*(i-1200)
-            m=p1-mi
-            n=m*0.2
-            summ=(m-n)+500
-            print(i[ind],f'Maksab tulumakse {n} EUR ja saab palga {summ}EUR')
-        elif int(p1)>2100:
-            n=p1*0.2
-            summ=p1-n
-            print(i[ind],f'Maksab tulumakse {n} EUR ja saab palga {summ}EUR')
+        elif p1>2100:
+            pass
 
 
 while 1:
